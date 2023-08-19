@@ -15,7 +15,7 @@ def send_notification(title, message):
         timeout=10,
     )
 
-# Send a notification with emojis when the script starts
+# Send a notification when the script starts
 startup_message = "🔋 The script has started! 🚀"
 send_notification("Battery Whisper", startup_message)
 
@@ -29,4 +29,4 @@ while True:
     elif battery_level <= 25:
             message = f"Your battery is now at {battery_level}%! Please connect the charger. 🔌"
             send_notification("Battery Whisper", message)
-    time.sleep(300)  # Check battery level every 30 secs
+    time.sleep(300)  # Check battery level every 300 secs
