@@ -48,6 +48,13 @@ Stop-Process -Id 12345
 
 Detailed setup instructions and usage examples are provided in [USAGE.md](USAGE.md).
 
+## Known Issues 🥲
+
+While the script effectively monitors battery levels and sends notifications, there are a few known issues that users should be aware of:
+
+1. **Continuous Running After Reaching 80%:**
+   After the battery level crosses 80%, the script might continue running continuously even if the charger is unplugged. This behavior might not align with the intended functionality.
+
 ## Contributing ⛓️
 
 Contributions and suggestions are welcome! If you'd like to improve this script or add new features, please feel free to submit a pull request.
